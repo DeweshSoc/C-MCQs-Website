@@ -1,0 +1,33 @@
+.code{
+    font-family: 'Source Code Pro', monospace;
+}
+li {
+    margin: 3% ;
+}
+
+
+.wrong{
+    background-color: rgb(255, 123, 83);
+}
+
+.right{
+    background-color: rgb(10, 206, 10);
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
