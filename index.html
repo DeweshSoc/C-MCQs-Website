@@ -1,325 +1,576 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>C++ MCQs</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <!-- my css -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <!-- code font -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700;900&display=swap" rel="stylesheet"> 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
   <body>
-    <i class="fa fa-copyright" aria-hidden="true"></i><span>Dewesh Jha 2020</span>
-    
+    <i class="fa fa-copyright" aria-hidden="true"></i
+    ><span>Dewesh Jha 2020</span>
+
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-3">C++ MCQs </h1>
-            <p class="lead">Padh le beta mauka hai</p>
-            <hr class="my-2">
-            <!-- <p>Sara questions karo. Pehle ek pen copy lekr socho tab option maro</p> -->
-            <p class="lead">
-            <h2> Bacha level - Q1 to Q5 , BOSS level - Q5 to Q10 </h2>
-            <form onsubmit="return check()">
+      <div class="container">
+        <h1 class="display-3">C++ MCQs</h1>
+        <p class="lead">Padh le beta mauka hai</p>
+        <hr class="my-2" />
+        <h2>Bacha level - Q1 to Q5 , BOSS level - Q5 to Q10</h2>
+        <div class="lead">
+          <form onsubmit="return check()">
             <ol>
-                <li class="question1">  
-                    <p class="question" id="question1"> Output kya hoga ? </p>
-                    <p class="question code ml-5" id="question1code">
-                        int u[10] = {1,2,3,4,5,6,7,8,9} <br>
-                        for(int i : u){ <br>
-                            cout<< i <<" ";   <br>
-                        } <br>
-                    </p>
-                    <div class="form-check">
-                      <label class="form-check-label d-block ">
-                        <input type="checkbox" class="form-check-input optiona" name=" "  value="checkedValue" >
-                        1,2,3,4,5,6,7,8,9
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionb" name=" "  value="checkedValue" >
-                        123456789
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionc" name=" "  value="checkedValue" >
-                        1  2  3  4  5  6  7  8  9
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optiond" name=" "  value="checkedValue" >
-                        i i i i i i i i i
-                      </label>
-                    </div>
-                </li>
-                <li class="question2">  
-                    <p class="question" id="question2"> Output kya hoga ? </p>
-                    <p class="question code ml-5" id="question2code">
-                        int a = 2147483647 , b = sizeof(int); <br>
-                        int c = a - b ; <br>
-                        int d = a + b ;    <br>
-                        cout<< a <<","<< b ; <br>
-                    </p>
-                    <div class="form-check">
-                      <label class="form-check-label d-block ">
-                        <input type="checkbox" class="form-check-input optiona" name=" "  value="checkedValue" >
-                        0 , -352247525
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionb" name=" " id="" value="checkedValue" >
-                        2147483643 , 2147483651
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionc" name=" " id="" value="checkedValue" >
-                        error
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optiond" name=" " id="" value="checkedValue" >
-                        2147483643 , -352247525
-                      </label>
-                    </div>
-                </li>
-                <li class="question3">  
-                    <p class="question" id="question3"> Output kya hoga ? </p>
-                    <p class="question code ml-5" id="question3code">
-                        char ch ;   <br>
-                        for(int i = 65 ; i<=68 ; i++){  <br>
-                            ch = i; <br>
-                            cout<< ch <<" "; <br>
-                        }
-                    </p>
-                    <div class="form-check">
-                      <label class="form-check-label d-block ">
-                        <input type="checkbox" class="form-check-input optiona" name=" " id=" " value="checkedValue" >
-                        65 66 67 68
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionb" name=" " id=" " value="checkedValue" >
-                        a b c d
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionc" name=" " id=" " value="checkedValue" >
-                            A B C D
-                    </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optiond" name=" " id=" " value="checkedValue" >
-                            error
-                      </label>
-                    </div>
-                </li>
-                <li class="question4">  
-                    <p class="question" id="question4"> Output kya hoga ? </p>
-                    <p class="question code ml-5" id="question4code">
-                        char a = '1', b = '2' ; <br>
-                        cout<< a + b ; <br>
-                    </p>
-                    <div class="form-check">
-                      <label class="form-check-label d-block ">
-                        <input type="checkbox" class="form-check-input optiona" name=" " id=" " value="checkedValue" >
-                        3
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionb" name=" " id=" " value="checkedValue" >
-                        error
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionc" name=" " id=" " value="checkedValue" >
-                        12
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optiond" name=" " id=" " value="checkedValue" >
-                        Depends on compiler
-                      </label>
-                    </div>
-                </li>
-                <li class="question5">  
-                    <p class="question" id="question5"> Output kya hoga ? </p>
-                    <p class="question code ml-5" id="question5code">
-                        int a;  <br>
-                        if(a){  <br>
-                            cout<<"CKMKB" <br>
-                        }else{  <br>
-                            cout<<"PKMKB" <br>
-                        } <br>
-                    </p>
-                    <div class="form-check">
-                      <label class="form-check-label d-block ">
-                        <input type="checkbox" class="form-check-input optiona" name=" " id=" " value="checkedValue" >
-                        CKMKB
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionb" name=" " id=" " value="checkedValue" >
-                        PKMKB
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionc" name=" " id=" " value="checkedValue" >
-                        error : 'a' was not initialised but used.
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optiond" name=" " id=" " value="checkedValue" >
-                        error : if syntax wrong.
-                      </label>
-                    </div>
-                </li>
-                <li class="question6">  
-                    <p class="question" id="question6"> Output kya hoga ? </p>
-                    <p class="question code ml-5" id="question6code">
-                        int a = 10 , b = 23 ; <br>
-                        cout<< a+b < 15 || 12345678; <br>
-                    </p>
-                    <div class="form-check">
-                      <label class="form-check-label d-block ">
-                        <input type="checkbox" class="form-check-input optiona" name=" " id=" " value="checkedValue" >
-                         33 < 15 || 12345678 
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionb" name=" " id=" " value="checkedValue" >
-                        1
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionc" name=" " id=" " value="checkedValue" >
-                        0
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optiond" name=" " id=" " value="checkedValue" >
-                        error
-                      </label>
-                    </div>
-                </li>
-                <li class="question7">  
-                    <p class="question" id="question7"> Kon sa loop lesser times execute karega ? </p>
-                    <p class="question code ml-5" id="question7code">
-                        // LOOP1 <br>
-                        for(int i=0 ; i < 10 : i++){ <br>
-                            if(!i){ <br>
-                                cout<<"hello"; <br>
-                            } <br>
-                        } <br>
-                        <br>
-                        //LOOP2 <br>
-                        while(1){ <br>
-                            int q = 9; <br>
-                            q--; <br> 
-                            if(q){ <br>
-                                break; <br>
-                            } <br>
-                        } <br>
-                    </p>
-                    <div class="form-check">
-                      <label class="form-check-label d-block ">
-                        <input type="checkbox" class="form-check-input optiona" name=" " id=" " value="checkedValue" >
-                        LOOP1
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionb" name=" " id=" " value="checkedValue" >
-                        LOOP2
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionc" name=" " id=" " value="checkedValue" >
-                        Dono Loops barabar
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optiond" name=" " id=" " value="checkedValue" >
-                        bekaar question
-                      </label>
-                    </div>
-                </li>
-                <li class="question8">  
-                    <p class="question" id="question8"> Output kya hoga ? ye wala kar liye toh tum bhut smart ho</p>
-                    <p class="question code ml-5" id="question8code">
-                        int u[10] = {1,2,3,4,5,6,7,8,9} <br>
-                        for(int i : u){ <br>
-                            cout<< i++ <<",";   <br>
-                        } <br>
-                    </p>
-                    <div class="form-check">
-                      <label class="form-check-label d-block ">
-                        <input type="checkbox" class="form-check-input optiona" name=" " id=" " value="checkedValue" >
-                        1,2,3,4,5,6,7,8,9,10
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionb" name=" " id=" " value="checkedValue" >
-                        2,3,4,5,6,7,8,9,10,11
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionc" name=" " id=" " value="checkedValue" >
-                        1,2,3,4,5,6,7,8,9,0
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optiond" name=" " id=" " value="checkedValue" >
-                        2,3,4,5,6,7,8,9,1
-                      </label>
-                    </div>
-                </li>
-                <li class="question9">  
-                    <p class="question" id="question9"> What is the difference between while and do-while loop? </p>
-                    <p class="question code ml-5" id="question9code">
-                        
-                    </p>
-                    <div class="form-check">
-                      <label class="form-check-label d-block ">
-                        <input type="checkbox" class="form-check-input optiona" name=" " id=" " value="checkedValue" >
-                        do-while ka complexity zyada hota hai
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionb" name=" " id=" " value="checkedValue" >
-                        while is faster 
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionc" name=" " id=" " value="checkedValue" >
-                        while is exit control loop
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optiond" name=" " id=" " value="checkedValue" >
-                        do-while is executed atleast once
-                      </label>
-                    </div>
-                </li>
-                <li class="question10">  
-                    <p class="question" id="question10"> Array and Vector mein kya difference h? </p>
-                    <p class="question code ml-5" id="question10code">
-                      
-                    </p>
-                    <div class="form-check">
-                      <label class="form-check-label d-block ">
-                        <input type="checkbox" class="form-check-input optiona" name=" " id=" " value="checkedValue" >
-                        Vectors are dynamic.
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionb" name=" " id=" " value="checkedValue" >
-                        Array storage is dynamically allocated. 
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optionc" name=" " id=" " value="checkedValue" >
-                        Array can resize itself.
-                      </label>
-                      <label class="form-check-label d-block">
-                        <input type="checkbox" class="form-check-input optiond" name=" " id=" " value="checkedValue" >
-                        Array bacho k liye h .... vector is for PROs.
-                      </label>
-                    </div>
-                </li>
-            </ol>
-                <input type="submit" class="btn btn-primary btn-lg" value="Submit">
-            </form>
-                <div class="jumbotron hide">
-                    <h1 class="display-3">Your Score : </h1>
+              <li class="question1">
+                <p class="question" id="question1">Output kya hoga ?</p>
+                <p class="question code ml-5" id="question1code">
+                  int u[10] = {1,2,3,4,5,6,7,8,9} <br />
+                  for(int i : u){ <br />
+                  cout<< i <<" "; <br />
+                  } <br />
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiona"
+                      name=" "
+                      value="checkedValue"
+                    />
+                    1,2,3,4,5,6,7,8,9
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionb"
+                      name=" "
+                      value="checkedValue"
+                    />
+                    123456789
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionc"
+                      name=" "
+                      value="checkedValue"
+                    />
+                    1 2 3 4 5 6 7 8 9
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiond"
+                      name=" "
+                      value="checkedValue"
+                    />
+                    i i i i i i i i i
+                  </label>
                 </div>
-
-                <h2 class="msg"></h2>
-
-
-            </p>
+              </li>
+              <li class="question2">
+                <p class="question" id="question2">Output kya hoga ?</p>
+                <p class="question code ml-5" id="question2code">
+                  int a = 2147483647 , b = sizeof(int); <br />
+                  int c = a - b ; <br />
+                  int d = a + b ; <br />
+                  cout<< a <<","<< b ; <br />
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiona"
+                      name=" "
+                      value="checkedValue"
+                    />
+                    0 , -352247525
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionb"
+                      name=" "
+                      id=""
+                      value="checkedValue"
+                    />
+                    2147483643 , 2147483651
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionc"
+                      name=" "
+                      id=""
+                      value="checkedValue"
+                    />
+                    error
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiond"
+                      name=" "
+                      id=""
+                      value="checkedValue"
+                    />
+                    2147483643 , -352247525
+                  </label>
+                </div>
+              </li>
+              <li class="question3">
+                <p class="question" id="question3">Output kya hoga ?</p>
+                <p class="question code ml-5" id="question3code">
+                  char ch ; <br />
+                  for(int i = 65 ; i<=68 ; i++){ <br />
+                  ch = i; <br />
+                  cout<< ch <<" "; <br />
+                  }
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiona"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    65 66 67 68
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionb"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    a b c d
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionc"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    A B C D
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiond"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    error
+                  </label>
+                </div>
+              </li>
+              <li class="question4">
+                <p class="question" id="question4">Output kya hoga ?</p>
+                <p class="question code ml-5" id="question4code">
+                  char a = '1', b = '2' ; <br />
+                  cout<< a + b ; <br />
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiona"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    3
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionb"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    error
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionc"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    12
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiond"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    Depends on compiler
+                  </label>
+                </div>
+              </li>
+              <li class="question5">
+                <p class="question" id="question5">Output kya hoga ?</p>
+                <p class="question code ml-5" id="question5code">
+                  int a; <br />
+                  if(a){ <br />
+                  cout<<"CKMKB" <br />
+                  }else{ <br />
+                  cout<<"PKMKB" <br />
+                  } <br />
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiona"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    CKMKB
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionb"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    PKMKB
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionc"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    error : 'a' was not initialised but used.
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiond"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    error : if syntax wrong.
+                  </label>
+                </div>
+              </li>
+              <li class="question6">
+                <p class="question" id="question6">Output kya hoga ?</p>
+                <p class="question code ml-5" id="question6code">
+                  int a = 10 , b = 23 ; <br />
+                  cout<< a+b < 15 || 12345678; <br />
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiona"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    33 < 15 || 12345678
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionb"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    1
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionc"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    0
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiond"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    error
+                  </label>
+                </div>
+              </li>
+              <li class="question7">
+                <p class="question" id="question7">
+                  Kon sa loop lesser times execute karega ?
+                </p>
+                <p class="question code ml-5" id="question7code">
+                  // LOOP1 <br />
+                  for(int i=0 ; i < 10 : i++){ <br />
+                  if(!i){ <br />
+                  cout<<"hello"; <br />
+                  } <br />
+                  } <br />
+                  <br />
+                  //LOOP2 <br />
+                  while(1){ <br />
+                  int q = 9; <br />
+                  q--; <br />
+                  if(q){ <br />
+                  break; <br />
+                  } <br />
+                  } <br />
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiona"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    LOOP1
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionb"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    LOOP2
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionc"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    Dono Loops barabar
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiond"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    bekaar question
+                  </label>
+                </div>
+              </li>
+              <li class="question8">
+                <p class="question" id="question8">
+                  Output kya hoga ? ye wala kar liye toh tum bhut smart ho
+                </p>
+                <p class="question code ml-5" id="question8code">
+                  int u[10] = {1,2,3,4,5,6,7,8,9} <br />
+                  for(int i : u){ <br />
+                  cout<< i++ <<","; <br />
+                  } <br />
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiona"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    1,2,3,4,5,6,7,8,9,10
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionb"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    2,3,4,5,6,7,8,9,10,11
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionc"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    1,2,3,4,5,6,7,8,9,0
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiond"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    2,3,4,5,6,7,8,9,1
+                  </label>
+                </div>
+              </li>
+              <li class="question9">
+                <p class="question" id="question9">
+                  What is the difference between while and do-while loop?
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiona"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    do-while ka complexity zyada hota hai
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionb"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    while is faster
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionc"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    while is exit control loop
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiond"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    do-while is executed atleast once
+                  </label>
+                </div>
+              </li>
+              <li class="question10">
+                <p class="question" id="question10">
+                  Array and Vector mein kya difference h?
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiona"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    Vectors are dynamic.
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionb"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    Array storage is dynamically allocated.
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionc"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    Array can resize itself.
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiond"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    Array bacho k liye h .... vector is for PROs.
+                  </label>
+                </div>
+              </li>
+            </ol>
+            <input
+              type="submit"
+              class="btn btn-primary btn-lg"
+              value="Submit"
+            />
+          </form>
         </div>
+        <div class="jumbotron hide">
+          <h1 class="display-3">Your Score :</h1>
+        </div>
+        <h2 class="msg"></h2>
+      </div>
     </div>
-    
+
     <!--  l JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="index.js"></script>
-   </body>
+  </body>
 </html>
