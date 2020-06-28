@@ -31,25 +31,28 @@
     />
   </head>
   <body>
+    <span>
     <i class="fa fa-copyright" aria-hidden="true"></i
-    ><span>Dewesh Jha 2020</span>
+    >Dewesh Jha 2020</span>
 
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-3">C++ MCQs</h1>
         <p class="lead">Padh le beta mauka hai</p>
         <hr class="my-2" />
-        <h2>Bacha level - Q1 to Q5 , BOSS level - Q5 to Q10</h2>
+        <h2>Operators</h2>
         <div class="lead">
           <form onsubmit="return check()">
             <ol>
               <li class="question1">
                 <p class="question" id="question1">Output kya hoga ?</p>
                 <p class="question code ml-5" id="question1code">
-                  int u[10] = {1,2,3,4,5,6,7,8,9} <br />
-                  for(int i : u){ <br />
-                  cout<< i <<" "; <br />
-                  } <br />
+                    <pre>
+    int a = 10 ; 
+    cout<< a--; 
+    a=a+20; 
+    coutt<< a; 
+                    </pre>
                 </p>
                 <div class="form-check">
                   <label class="form-check-label d-block">
@@ -59,7 +62,7 @@
                       name=" "
                       value="checkedValue"
                     />
-                    1,2,3,4,5,6,7,8,9
+                    929
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -68,7 +71,7 @@
                       name=" "
                       value="checkedValue"
                     />
-                    123456789
+                    1029
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -77,7 +80,7 @@
                       name=" "
                       value="checkedValue"
                     />
-                    1 2 3 4 5 6 7 8 9
+                    930
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -86,17 +89,19 @@
                       name=" "
                       value="checkedValue"
                     />
-                    i i i i i i i i i
+                    1030
                   </label>
                 </div>
               </li>
               <li class="question2">
                 <p class="question" id="question2">Output kya hoga ?</p>
                 <p class="question code ml-5" id="question2code">
-                  int a = 2147483647 , b = sizeof(int); <br />
-                  int c = a - b ; <br />
-                  int d = a + b ; <br />
-                  cout<< a <<","<< b ; <br />
+                    <pre>
+    int a = 3 ; 
+    while(a){ 
+      cout<< --a ; 
+    } 
+                    </pre>
                 </p>
                 <div class="form-check">
                   <label class="form-check-label d-block">
@@ -106,7 +111,7 @@
                       name=" "
                       value="checkedValue"
                     />
-                    0 , -352247525
+                    321
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -116,7 +121,7 @@
                       id=""
                       value="checkedValue"
                     />
-                    2147483643 , 2147483651
+                    21
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -126,7 +131,7 @@
                       id=""
                       value="checkedValue"
                     />
-                    error
+                    210
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -136,18 +141,17 @@
                       id=""
                       value="checkedValue"
                     />
-                    2147483643 , -352247525
+                    3210
                   </label>
                 </div>
               </li>
               <li class="question3">
                 <p class="question" id="question3">Output kya hoga ?</p>
                 <p class="question code ml-5" id="question3code">
-                  char ch ; <br />
-                  for(int i = 65 ; i<=68 ; i++){ <br />
-                  ch = i; <br />
-                  cout<< ch <<" "; <br />
-                  }
+                  <pre>
+    char a[29] = "Techno India Chutiya College";
+    cout<< a[27]<<","<< a[28];
+                  </pre>
                 </p>
                 <div class="form-check">
                   <label class="form-check-label d-block">
@@ -158,7 +162,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    65 66 67 68
+                      e,
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -168,7 +172,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    a b c d
+                      e,[garbage value]
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -178,7 +182,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    A B C D
+                      error : array of size 29 initialized with string of size 28.
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -188,15 +192,18 @@
                       id=" "
                       value="checkedValue"
                     />
-                    error
+                      error : a[28] is out of the index range of array a.
                   </label>
                 </div>
               </li>
               <li class="question4">
                 <p class="question" id="question4">Output kya hoga ?</p>
                 <p class="question code ml-5" id="question4code">
-                  char a = '1', b = '2' ; <br />
-                  cout<< a + b ; <br />
+                    <pre>
+    int a = 20; 
+    int b = a >> 2 ; 
+    cout<< b; 
+                    </pre>
                 </p>
                 <div class="form-check">
                   <label class="form-check-label d-block">
@@ -207,7 +214,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    3
+                      18
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -217,7 +224,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    error
+                    Cannot predict without calculator
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -227,7 +234,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    12
+                      22
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -237,19 +244,27 @@
                       id=" "
                       value="checkedValue"
                     />
-                    Depends on compiler
+                      10
                   </label>
                 </div>
               </li>
               <li class="question5">
                 <p class="question" id="question5">Output kya hoga ?</p>
                 <p class="question code ml-5" id="question5code">
-                  int a; <br />
-                  if(a){ <br />
-                  cout<<"CKMKB"; <br />
-                  }else{ <br />
-                  cout<<"PKMKB"; <br />
-                  } <br />
+                 <pre> 
+    int a[3] = {1,2,3}; 
+    int b[3] = {1,2,3};
+    int c[3] = {1,2,2};
+    int d = 0 , e = 0 , f = 0 ; 
+    for(int i=0 ; i < 3 ; i++){ 
+        d = d ^ a[i]; 
+        e = e ^ b[i]; 
+        f = f ^ c[i]; 
+    } 
+    cout<< d ^ e ; 
+    cout<< f ^ e ; 
+    cout<< d ^ f ; 
+                </pre>
                 </p>
                 <div class="form-check">
                   <label class="form-check-label d-block">
@@ -260,7 +275,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    CKMKB
+                     error 
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -270,7 +285,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    PKMKB
+                      1[3^2][3^2]
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -280,7 +295,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    error : 'a' was not initialised but used.
+                    [3^2][3^2][3^2]
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -290,15 +305,19 @@
                       id=" "
                       value="checkedValue"
                     />
-                    error : if syntax wrong.
+                    0[3^2][3^2]
                   </label>
                 </div>
               </li>
               <li class="question6">
                 <p class="question" id="question6">Output kya hoga ?</p>
                 <p class="question code ml-5" id="question6code">
-                  int a = 10 , b = 23 ; <br />
-                  cout<< a+b < 15 || 12345678; <br />
+                  <pre>
+    int a , b , c ;
+    a = b ^ c; 
+    cout << c ^ a <<","<< b ^ a ; 
+    //a,b,c ka kuch v value soch lo
+                  </pre>
                 </p>
                 <div class="form-check">
                   <label class="form-check-label d-block">
@@ -309,7 +328,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    33 < 15 || 12345678
+                      b,c
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -319,7 +338,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    1
+                      a,b
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -329,7 +348,119 @@
                       id=" "
                       value="checkedValue"
                     />
-                    0
+                      a,c
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiond"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                     error
+                  </label>
+                </div>
+              </li>
+              <li class="question7">
+                <p class="question" id="question7">
+                  Output kya hoga?
+                </p>
+                <p class="question code ml-5" id="question7code">
+                  <pre>
+    // assume 4 bit numbers 
+    int a = 1 ; 
+    a = a + (1 << 3) ; 
+    cout<< a ; 
+                  </pre>
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiona"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                      9
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionb"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                      3
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionc"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    10
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiond"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    2
+                  </label>
+                </div>
+              </li>
+              <li class="question8">
+                <p class="question" id="question8">
+                  Output kya hoga ? 
+                </p>
+                <p class="question code ml-5" id="question8code">
+                  <pre>
+    int a[7] = {1,6,2,4,9,4,7}; 
+    int d = -1 ;
+    for(int i = 0 ; i < 7 ; i++){ 
+      d = d > a[i] ? d : a[i] ; 
+    }
+    cout<< d ;
+                  </pre> 
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optiona"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    7
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionb"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    9
+                  </label>
+                  <label class="form-check-label d-block">
+                    <input
+                      type="checkbox"
+                      class="form-check-input optionc"
+                      name=" "
+                      id=" "
+                      value="checkedValue"
+                    />
+                    -1
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -343,126 +474,12 @@
                   </label>
                 </div>
               </li>
-              <li class="question7">
-                <p class="question" id="question7">
-                  Kon sa loop lesser times execute karega ?
-                </p>
-                <p class="question code ml-5" id="question7code">
-                  // LOOP1 <br />
-                  for(int i=0 ; i < 10 : i++){ <br />
-                  if(!i){ <br />
-                  cout<<"hello"; <br />
-                  } <br />
-                  } <br />
-                  <br />
-                  //LOOP2 <br />
-                  while(1){ <br />
-                  int q = 9; <br />
-                  q--; <br />
-                  if(q){ <br />
-                  break; <br />
-                  } <br />
-                  } <br />
-                </p>
-                <div class="form-check">
-                  <label class="form-check-label d-block">
-                    <input
-                      type="checkbox"
-                      class="form-check-input optiona"
-                      name=" "
-                      id=" "
-                      value="checkedValue"
-                    />
-                    LOOP1
-                  </label>
-                  <label class="form-check-label d-block">
-                    <input
-                      type="checkbox"
-                      class="form-check-input optionb"
-                      name=" "
-                      id=" "
-                      value="checkedValue"
-                    />
-                    LOOP2
-                  </label>
-                  <label class="form-check-label d-block">
-                    <input
-                      type="checkbox"
-                      class="form-check-input optionc"
-                      name=" "
-                      id=" "
-                      value="checkedValue"
-                    />
-                    Dono Loops barabar
-                  </label>
-                  <label class="form-check-label d-block">
-                    <input
-                      type="checkbox"
-                      class="form-check-input optiond"
-                      name=" "
-                      id=" "
-                      value="checkedValue"
-                    />
-                    bekaar question
-                  </label>
-                </div>
-              </li>
-              <li class="question8">
-                <p class="question" id="question8">
-                  Output kya hoga ? ye wala kar liye toh tum bhut smart ho
-                </p>
-                <p class="question code ml-5" id="question8code">
-                  int u[10] = {1,2,3,4,5,6,7,8,9} <br />
-                  for(int i : u){ <br />
-                  cout<< i++ <<","; <br />
-                  } <br />
-                </p>
-                <div class="form-check">
-                  <label class="form-check-label d-block">
-                    <input
-                      type="checkbox"
-                      class="form-check-input optiona"
-                      name=" "
-                      id=" "
-                      value="checkedValue"
-                    />
-                    1,2,3,4,5,6,7,8,9,10
-                  </label>
-                  <label class="form-check-label d-block">
-                    <input
-                      type="checkbox"
-                      class="form-check-input optionb"
-                      name=" "
-                      id=" "
-                      value="checkedValue"
-                    />
-                    2,3,4,5,6,7,8,9,10,11
-                  </label>
-                  <label class="form-check-label d-block">
-                    <input
-                      type="checkbox"
-                      class="form-check-input optionc"
-                      name=" "
-                      id=" "
-                      value="checkedValue"
-                    />
-                    1,2,3,4,5,6,7,8,9,0
-                  </label>
-                  <label class="form-check-label d-block">
-                    <input
-                      type="checkbox"
-                      class="form-check-input optiond"
-                      name=" "
-                      id=" "
-                      value="checkedValue"
-                    />
-                    2,3,4,5,6,7,8,9,1
-                  </label>
-                </div>
-              </li>
               <li class="question9">
                 <p class="question" id="question9">
-                  What is the difference between while and do-while loop?
+                  <pre>
+    In a 32-bit integer (binary form), how will you check if 
+    the integer is odd or even ?
+                  </pre>
                 </p>
                 <div class="form-check">
                   <label class="form-check-label d-block">
@@ -473,7 +490,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    do-while ka complexity zyada hota hai
+                      last bit is 0
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -483,7 +500,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    while is faster
+                    first bit is 1
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -493,7 +510,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    while is exit control loop
+                    first bit is 0
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -503,13 +520,15 @@
                       id=" "
                       value="checkedValue"
                     />
-                    do-while is executed atleast once
+                    last bit is 1
                   </label>
                 </div>
               </li>
               <li class="question10">
                 <p class="question" id="question10">
-                  Array and Vector mein kya difference h?
+                   <pre>
+    Dereference operator kon sa h?
+                   </pre>
                 </p>
                 <div class="form-check">
                   <label class="form-check-label d-block">
@@ -520,7 +539,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    Vectors are dynamic.
+                      &
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -530,7 +549,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    Array storage is dynamically allocated.
+                    *
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -540,7 +559,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    Array can resize itself.
+                    ,
                   </label>
                   <label class="form-check-label d-block">
                     <input
@@ -550,7 +569,7 @@
                       id=" "
                       value="checkedValue"
                     />
-                    Array bacho k liye h .... vector is for PROs.
+                    ::
                   </label>
                 </div>
               </li>

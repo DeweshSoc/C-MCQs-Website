@@ -1,7 +1,7 @@
 let a = 0;
 
 function check() {
-  if (document.querySelector(".question1 .optiona").checked == true) {
+  if (document.querySelector(".question1 .optionb").checked == true) {
     a++;
     document.querySelector(".question1").classList.add("right");
     document.querySelector(".question1").classList.remove("wrong");
@@ -9,7 +9,7 @@ function check() {
     document.querySelector(".question1").classList.add("wrong");
     document.querySelector(".question1").classList.remove("right");
   }
-  if (document.querySelector(".question2 .optiond").checked == true) {
+  if (document.querySelector(".question2 .optionc").checked == true) {
     a++;
     document.querySelector(".question2").classList.add("right");
     document.querySelector(".question2").classList.remove("wrong");
@@ -17,7 +17,7 @@ function check() {
     document.querySelector(".question2").classList.add("wrong");
     document.querySelector(".question2").classList.remove("right");
   }
-  if (document.querySelector(".question3 .optionc").checked == true) {
+  if (document.querySelector(".question3 .optiona").checked == true) {
     a++;
     document.querySelector(".question3").classList.add("right");
     document.querySelector(".question3").classList.remove("wrong");
@@ -25,7 +25,7 @@ function check() {
     document.querySelector(".question3").classList.add("wrong");
     document.querySelector(".question3").classList.remove("right");
   }
-  if (document.querySelector(".question4 .optionc").checked == true) {
+  if (document.querySelector(".question4 .optiond").checked == true) {
     a++;
     document.querySelector(".question4").classList.add("right");
     document.querySelector(".question4").classList.remove("wrong");
@@ -33,7 +33,7 @@ function check() {
     document.querySelector(".question4").classList.add("wrong");
     document.querySelector(".question4").classList.remove("right");
   }
-  if (document.querySelector(".question5 .optiona").checked == true) {
+  if (document.querySelector(".question5 .optiond").checked == true) {
     a++;
     document.querySelector(".question5").classList.add("right");
     document.querySelector(".question5").classList.remove("wrong");
@@ -41,7 +41,7 @@ function check() {
     document.querySelector(".question5").classList.add("wrong");
     document.querySelector(".question5").classList.remove("right");
   }
-  if (document.querySelector(".question6 .optionb").checked == true) {
+  if (document.querySelector(".question6 .optiona").checked == true) {
     a++;
     document.querySelector(".question6").classList.add("right");
     document.querySelector(".question6").classList.remove("wrong");
@@ -49,7 +49,7 @@ function check() {
     document.querySelector(".question6").classList.add("wrong");
     document.querySelector(".question6").classList.remove("right");
   }
-  if (document.querySelector(".question7 .optiona").checked == true) {
+  if (document.querySelector(".question7 .optionc").checked == true) {
     a++;
     document.querySelector(".question7").classList.add("right");
     document.querySelector(".question7").classList.remove("wrong");
@@ -57,7 +57,7 @@ function check() {
     document.querySelector(".question7").classList.add("wrong");
     document.querySelector(".question7").classList.remove("right");
   }
-  if (document.querySelector(".question8 .optionc").checked == true) {
+  if (document.querySelector(".question8 .optionb").checked == true) {
     a++;
     document.querySelector(".question8").classList.add("right");
     document.querySelector(".question8").classList.remove("wrong");
@@ -73,7 +73,7 @@ function check() {
     document.querySelector(".question9").classList.add("wrong");
     document.querySelector(".question9").classList.remove("right");
   }
-  if (document.querySelector(".question10 .optiona").checked == true) {
+  if (document.querySelector(".question10 .optionb").checked == true) {
     a++;
     document.querySelector(".question10").classList.add("right");
     document.querySelector(".question10").classList.remove("wrong");
